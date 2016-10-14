@@ -1,0 +1,94 @@
+body
+{
+	margin:0px;	
+	overflow-x:hidden;
+	
+}
+#header h3
+{
+	    background-color: #999999;
+    color: #000;
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 700;
+    border-radius: 3px;
+    height: 40px;
+    padding: 9px;
+}
+.top-header h5
+{
+	text-align:center;
+	display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 700;
+}
+.smart-user-inner-left{    width: 50%;
+    float: left;}
+.smart-user-inner-left label{width:100%; font-weight:normal;}
+.smart-user-inner-right{    width: 50%;
+    float: left;}
+.smart-user-inner-right label{width:100%; font-weight:normal;}
+.smarthive-user-details{width:16%;}
+.smarthive-search-area{
+	    width: 75%;
+    margin: 0 auto;
+	margin-top:30px;
+}
+.smarthive-user-details-table{
+	width:80%;
+	margin:0 auto;
+	margin-top:30px;
+	text-align:center;
+	
+}
+.table-bordered th{
+	text-align:center;
+	
+}
+
+.smart-hive-btns{
+	text-align:center;
+}
+
+/*************login start************/
+.smart-hive-login-form {
+    width: 50% !important;
+}
+.smart-total-login {
+    top: 158px;
+    left: 12%;
+}
+.smarthive-welcome h4{text-align:center; font-weight:700; }
+/*************login end************/
+.smarthive-client-list {
+    margin: 0 auto;
+    padding: 20px;
+    width: 35%;
+}
+.smart-hive-create-client {
+    width: 136px;
+}
+.smarthive-form-alignment {
+    margin-bottom: 9px !important;
+}
+.smarthive-form-alignment select {
+    width: 172px !important;
+    height: 33px;
+	border:1px solid lightgrey;
+	border-radius:3px;
+}	
+
+.smarthive-admin{
+    font-weight: 700;}
+	.smarthive-form-alignment-client-admin {
+    text-align: center;
+    margin-top: 20px;
+}
+

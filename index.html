@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Angular login</title>
+
+    <!-- application css -->
+	<link href="app-content/css/bootstrap.min.css" rel="stylesheet">
+	<link href="app-content/css/style.css" rel="stylesheet">
+    <!-- <link href="app-content/app.css" rel="stylesheet" /> -->
+</head>
+<body>
+    <!-- main app container -->
+	<header id="header" class="clearfix" role="banner">
+				<h3>SMART HIVE</h3>
+	</header>
+	
+    <!-- <div class="jumbotron">
+        <div class="container">
+            <div class="col-sm-8 col-sm-offset-2">-->
+                <ui-view></ui-view>
+            <!-- </div>
+        </div>
+    </div> -->
+    
+    <!-- angular scripts -->
+    <script src="app-content/lib/angular.min.js"></script>
+    <script src="app-content/lib/angular-messages.min.js"></script>
+    <script src="app-content/lib/angular-ui-router.min.js"></script>
+    <script src="app-content/lib/ngStorage.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- application scripts -->
+    <script src="app.js"></script>
+    <script src="app-services/authentication.service.js"></script>
+    <script src="home/index.controller.js"></script>
+    <script src="login/index.controller.js"></script>
+
+    <!-- scripts for fake backend -->
+    <script src="app-content/lib/angular-mocks.js"></script>
+    <script src="app-helpers/fake-backend.js"></script>
+</body>
+</html>

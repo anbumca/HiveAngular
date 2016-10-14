@@ -1,0 +1,101 @@
+<div class="row">
+					<div class="top-header">
+						<h5>CLIENT LIST</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="smarthive-user-details pull-right">
+							<div class="smart-user-inner-left">
+								<label style="margin-left:5px;"> &nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;  &nbsp;USER :</label>
+								<label>LOGIN DATE:</label>
+								<label>LOGIN TIME:</label>
+							</div>
+							<div class="smart-user-inner-left" ng-repeat="details in vm.details">
+								<label>	{{details.user}}</label>
+								<label> {{details.Login_date}}</label>
+								<label>	{{details.Login_time}}</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="smarthive-search-area">
+					
+							<form class="form-inline">
+								<div class="col-lg-4 col-md-4 col-sm-34 col-xs-6">
+								  <div class="form-group">
+									<label for="exampleInputName2">CLIENT ID</label>
+									<input type="text" class="form-control" id="exampleInputName2" placeholder="Search" ng-model="test.client_id">
+								  </div>
+								</div>
+								<div class="col-lg-4 col-md-34col-sm-4 col-xs-6">  
+								  
+									  <div class="form-group">
+										<label for="exampleInputEmail2">CLIENT NAME</label>
+										<input type="text" class="form-control" id="exampleInputEmail2" placeholder="Search" ng-model="test.client_name">
+									  </div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  <div class="form-group">
+										<label for="exampleInputEmail2">STATUS</label>
+										<input type="text" class="form-control" id="exampleInputEmail2" placeholder="Search" ng-model="test.status">
+									  </div>
+								</div>
+							  
+							</form>
+					
+					</div>
+				
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="smarthive-user-details-table">
+						
+							<div class="table-responsive">
+							  <table class="table table-bordered">
+								<!--------->
+								<thead>
+									<tr> 
+										<th>CLIENT ID</th>
+										<th>CLIENT NAME</th>
+										<th>STATUS</th>
+										<th>ACTION</th>
+										
+									</tr>
+								</thead>
+								<tbody> 
+									<tr class="active" data-ng-repeat="x in vm.names | filter:test">
+										<td>{{x.client_id}}</td>
+										<td>{{x.client_name}}</td>
+										<td>{{x.status}}</td>
+										<td><a href="#">Edit</a> &nbsp;<a href="#">Delete</a>
+										</td> 										
+									</tr>	
+									<tr class="active" ng-show="(vm.names | filter:test).length == 0">
+										<td colspan="4" ng-cloak>Nothing here!</td>
+										</td> 										
+									</tr>
+							  </table>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+				
+				<div class="row">
+				
+					<div class="smart-hive-btns">
+						<ul  class="list-inline">
+						
+							<li><button type="button" class="btn btn-success" ng-click="anbu()">CREATE</button></li>
+							<li><a href="#/login"><button type="button" class="btn btn-success">Logout</button></a></li>
+						
+						</ul>
+					
+					
+					</div>
+				
+				</div>
